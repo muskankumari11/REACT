@@ -1,0 +1,76 @@
+//in vite
+//folder 05basicreact
+//app.js
+import Chai from "./Chai";
+
+function App() {
+  return (
+    <>
+    <Chai/>
+  </>
+  );
+}
+
+export default App;
+
+//chai.jsx
+function Chai(){
+    return(
+        <h2>chai in reactt</h2>
+    )
+}
+export default Chai
+
+//index.js
+import React from 'react';
+import ReactDOM from 'react-dom/client';
+import App from './App';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
+//output-> chai in reactt
+//jsx return one element
+//but inside element there can be many element
+//we can write <div> </div> inside this many elements
+//but we can also make it empty <> </> its called fregmentation in react
+
+//in folder 03vitereact for vite
+//app.jsx
+
+import Chai from "./chai"
+function App() {
+  return (
+    <>  //return fregmentation 
+    <Chai/>
+    <h1>chai or react</h1>
+    <p>test para</p>
+    </>
+  )
+}
+
+export default App
+
+//Chai.jsx
+function Chai(){
+    return(
+        <h3>chai is ready</h3>
+    )
+}
+export default Chai
+
+//main.jsx
+import React from 'react'
+import ReactDOM from 'react-dom/client'
+import App from './App.jsx'
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>,
+)
+//output -> chai is ready
+//Chai , C should be capital, not compulsory for file name. 
