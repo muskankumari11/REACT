@@ -1,0 +1,153 @@
+//Tailwind use
+//inside 03tailwindprops 
+//tailwindconfig.js
+//go to tailwind css and get started and then go in framework guidelines here you see in 
+//tailwindconfig.js 
+module.exports = {
+  content: ["./src/**/*.{html,js}"],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+//i added this in 
+//tailwindconfig.js ->file name
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+  ],
+  
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+
+//index.css
+//go to tailwind css and get started and then go in framework guidelines here you see in 
+//index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+//go to index.css file inside src and add after adding the code looks like 
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #646cff;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+  a:hover {
+    color: #747bff;
+  }
+  button {
+    background-color: #f9f9f9;
+  }
+}
+
+//go in file App.jsx and add tailwind css card here choosed first card  and you got error so do take care of /> after image corrected code given below 
+
+import { useState } from 'react';
+import reactLogo from './assets/react.svg';
+import viteLogo from '/vite.svg';
+import './App.css';
+
+function App() {
+  const [count, setCount] = useState(0);
+
+  return (
+    <>
+      <h1 className='bg-green-400 text-black p-4 rounded-xl'>tailwind test</h1>
+
+      <figure className="md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800">
+        <img className="w-24 h-24 md:w-48 md:h-auto md:rounded-none rounded-full mx-auto" src="https://images.pexels.com/photos/20807272/pexels-photo-20807272/free-photo-of-a-woman-smiling-while-eating-food-at-a-restaurant.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="" width="384" height="512" />
+        <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
+          <blockquote>
+            <p className="text-lg font-medium">
+              “Tailwind CSS is the only framework that I've seen scale
+              on large teams. It’s easy to customize, adapts to any design,
+              and the build size is tiny.”
+            </p>
+          </blockquote>
+          <figcaption className="font-medium">
+            <div className="text-sky-500 dark:text-sky-400">
+              Sarah Dayan
+            </div>
+            <div className="text-slate-700 dark:text-slate-500">
+              Staff Engineer, Algolia
+            </div>
+          </figcaption>
+        </div>
+      </figure>
+    </>
+  );
+}
+
+export default App;
+//you can see on vite+react 
+
+//NOW FOR PROPS
+
+//doubt..
